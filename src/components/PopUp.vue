@@ -56,7 +56,7 @@ export default {
   }
   .popup-inner {
     background-color: rgb(255, 255, 255);
-    padding: 0 30px 0 30px;
+    padding: 0 30px 30px 30px;
     border-radius: 0px;
     width: 100%;
     height: auto;
