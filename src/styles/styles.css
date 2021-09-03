@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  body {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Lab Grotesque", sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  
+  hr {
+    background-color: #dfe3e6;
+    color: #dfe3e6;
+    border: none;
+    height: 1px;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  
+  .main-form {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .main-form ul li label {
+    font-weight: 600;
+  }
+  
+  .main-form ul li input {
+    border: 1px solid #dfe3e6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+  }
+  
+  .main-form ul li input:focus {
+    border: 0.5px solid black;
+  }
+  
+  .main-form ul li button {
+    color: #ea0029;
+    font-weight: 600;
+  }
+  
+  .main-form ul li button:hover {
+    color: #f53a31;
+  }
+  
+  .select-form span {
+    font-weight: 600;
+    margin-right: 40px;
+  }
+
+  .select-form button {
+    width: 73px;
+    height: 36px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  .btn-active {
+    background: linear-gradient(
+        255.35deg,
+        #dc3131 0.83%,
+        rgba(255, 79, 79, 0) 108.93%
+      ),
+      #ff5e56;
+  
+    color: #ffffff;
+  }
+  
+  .btn-active:hover {
+    background: #dfe3e6;
+    color: #000000;
+  }
+  
+  .btn-disabled {
+    color: #000000;
+    background: #eef0f2;
+  }
+  
+  .add-btn {
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(
+        255.35deg,
+        #dc3131 0.83%,
+        rgba(255, 79, 79, 0) 108.93%
+      ),
+      #ff5e56;
+    box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  
+  .add-btn:hover {
+    background: #ea0029;
+  }
+  
+  .computed {
+    position: relative;
+    margin-bottom: 30px;
+    max-height: 210px;
+    overflow: auto;
+  }
+  
+  .computed ul li div {
+    padding: 10px 0;
+  }
+  
+  .computed ul li div span:not(.tip) {
+    margin-left: 30px;
+  }
+  
+  .computed > span {
+    font-weight: 600;
+  }
+  
+  .toggle-btn {
+    font-size: 17px;
+    font-family: "Lab Grotesque", sans-serif;
+    height: 56px;
+    width: 200px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 44px #cfdae7);
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+  }
+  
+  .toggle-btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+  .tip {
+    color: #808080;
+    margin-top: 20px;
+    line-height: 24px;
+    padding-right: 100px;
+  }
+  
+  .comp-chbx {
+    position: absolute;
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #dfe3e6;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  
+  .comp-chbx img {
+    margin-left: 3px;
+  }
+  
+  #checkbox-id {
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #checkbox-id:hover + .comp-chbx {
+    border: 1px solid #000;
+  }
+  
+  #checkbox-id:checked + .comp-chbx {
+    background: linear-gradient(
+        255.35deg,
+        #dc3131 0.83%,
+        rgba(255, 79, 79, 0) 108.93%
+      ),
+      #ff5e56;
+  }
+  
+  .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        255.35deg,
+        #dc3131 0.83%,
+        rgba(255, 79, 79, 0) 108.93%
+      ),
+      #ff5e56;
+    height: 100vh;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 375px){
+    .select-form span {
+        display: block;
+        font-weight: 600;
+        margin-right: 150px;
+        margin-bottom: 30px;
+      }
+      .tip {
+        padding-right: 0px;
+      }
+  }
